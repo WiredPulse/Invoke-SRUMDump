@@ -1,7 +1,51 @@
-﻿# Future project... system uptime... event ID 6013 in System.evtx
+﻿<#
+    .SYNOPSIS
+        Invoke-SRUMDump is a pure PowerShell/ .Net capability that enables the dumping of the System Resource Utilization Management (SRUM) database for CSVs. The database generally 
+        contains 30 days of information that is vital to incident response and forensics.
 
-# https://github.com/libyal/esedb-kb/blob/master/documentation/System%20Resource%20Usage%20Monitor%20(SRUM).asciidoc
+    .PARAMETER Live
+        Used to dump SRUM from a live system.
+    
+    .PARAMETER Offline
+        Used to signify that the script will be supplied a offline SRUM db and Software hive.
+    
+    .PARAMETER Srum.
+        Used to depict a location for an offline SRUM db
+    
+    .PARAMETER Hive
+        Used to depict a location for an offline Software hive.
+    
+    .PARAMETER ExportDir
+        By default, this is set to the user's desktop and creates a folder what the date in which the script was executed. An example of the folder is "srum-03-15-21". If desired, this 
+        parameter can be supplied with a different location. 
+    
+    .EXAMPLE
+        PS C:\ > .\Invoke-SRUMDump.ps1 -live
 
+        Executes the script against the live machine and stores the output in a folder on the user's desktop.
+.
+    .EXAMPLE
+        PS C:\ > .\Invoke-SRUMDump.ps1 -live -exportdir c:\windows
+
+        Executes the script against the live machine and stores the output in a folder within c:\windows
+    
+    .EXAMPLE
+        PS C:\ > .\Invoke-SRUMDump.ps1 -offline -srum c:\srum.db -hive c:\software.hiv
+
+        Executes the script against the srum db file at c:\srum.db and the hive file at c:\software.hiv.
+
+    .EXAMPLE
+        PS C:\ > .\Invoke-SRUMDump.ps1 -offline -srum c:\srum.db -hive c:\software.hiv -exportdir c:\windows
+
+        Executes the script against the srum db file at c:\srum.db and the hive file at c:\software.hiv and then stores the output in a folder within c:\windows.
+
+
+    .NOTES  
+        File Name      : Invoke-SRUMDump.ps1
+        Version        : v.0.2
+        Author         : @WiredPulse
+        Created        : 20 May 21
+#>
 
 [CmdletBinding()]
 param(
