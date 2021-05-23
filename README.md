@@ -19,4 +19,5 @@ PS C:\> .\Invoke-SRUMDump.ps1 -offline -srum [path to srum db] -hive [path to So
 | Title | Author | Link |
 | ------------- | ------------- | ------------- |
 | System Resource Usage Monitor (SRUM) database  | Joachim Metz | https://github.com/libyal/esedb-kb/blob/master/documentation/System%20Resource%20Usage%20Monitor%20(SRUM).asciidoc |
+| Extensible Storage Engine (ESE) Database File (EDB) format | Joachim Metz | https://github.com/libyal/libesedb |
 | SRUM forensics | Yogesh Khatri  | |
