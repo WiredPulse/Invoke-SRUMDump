@@ -16,15 +16,7 @@ PS C:\> .\Invoke-SRUMDump.ps1 -offline -srum [path to srum db] -hive [path to So
 ```
 
 # References
-Title	Author	Link
-SRUM forensics	Yogesh Khatri	https://www.sans.org/summit-archives/file/summit-archive-1492184583.pdf
-srum-dump	Mark Baggett	https://github.com/MarkBaggett/srum-dump
-Extensible Storage Engine (ESE) Database File (EDB) format	Joachim Metz	https://github.com/libyal/libesedb
-System Resource Usage Monitor (SRUM) database	Joachim Metz	https://github.com/libyal/esedb-kb/blob/master/documentation/System%20Resource%20Usage%20Monitor%20(SRUM).asciidoc
-Extensible Storate Engine (ESE) Cmdlets	BAMCIS Networks	https://github.com/bamcisnetworks/ESENT
-
-
-| First Header  | Second Header |
+| Title | Author | Link
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| System Resource Usage Monitor (SRUM) database  | Joachim Metz | https://github.com/libyal/esedb-kb/blob/master/documentation/System%20Resource%20Usage%20Monitor%20(SRUM).asciidoc
+| SRUM forensics | Yogesh Khatri  |
