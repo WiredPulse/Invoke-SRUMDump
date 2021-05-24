@@ -23,7 +23,7 @@
         PS C:\ > .\Invoke-SRUMDump.ps1 -live
 
         Executes the script against the live machine and stores the output in a folder on the user's desktop.
-.
+
     .EXAMPLE
         PS C:\ > .\Invoke-SRUMDump.ps1 -live -exportdir c:\windows
 
