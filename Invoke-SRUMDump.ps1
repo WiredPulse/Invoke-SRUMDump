@@ -57,18 +57,6 @@ param(
 )
 
 
-<#
-[CmdletBinding()]
-param(
-    $ExportDir = "$env:USERPROFILE\desktop\srum",
-    $Srum,
-    $Hive,
-    [switch]$Live
-)
-
-#>
-
-
 $currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if(-not($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))){
     throw "Error: This script needs to be ran as a user with Administrator rights"
