@@ -27,7 +27,7 @@
     .EXAMPLE
         PS C:\ > .\Invoke-SRUMDump.ps1 -live -exportdir c:\windows
 
-        Executes the script against the live machine and stores the output in a folder within c:\windows
+        Executes the script against the live machine and stores the output in a folder within c:\windows.
     
     .EXAMPLE
         PS C:\ > .\Invoke-SRUMDump.ps1 -offline -srum c:\srum.db -hive c:\software.hiv
