@@ -10,7 +10,7 @@
         Used to signify that the script will be supplied a offline SRUM db and Software hive.
     
     .PARAMETER Srum
-        Used to depict a location for an offline SRUM db
+        Used to depict a location for an offline SRUM db.
     
     .PARAMETER Hive
         Used to depict a location for an offline Software hive.
